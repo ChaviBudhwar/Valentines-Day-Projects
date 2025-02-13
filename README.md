@@ -28,3 +28,6 @@ This repository contains my **Valentine’s Day-themed projects** made with **HT
 ## 🎨 Languages Used:
   - **HTML/CSS**: Used to create beautiful, interactive Valentine’s Day web pages with animations.
   - **Python**: Used for scripts that type messages, create graphics, and draw hearts using the turtle module.
+
+## 📝 P.S.:
+I’ve added notes and explanations throughout the code for parts I didn’t fully understand or where I had to reference additional resources, including ChatGPT! These notes serve as reminders for concepts I tend to forget or need clarification on as I continue learning and improving my skills.
