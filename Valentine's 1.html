@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;/* See Later */
+            flex-direction: column;
+        }
+
+        .heart {
+            color: red;
+            font-size: 50px;
+            /* See Later */
+            animation: heartbeat 1s infinite; 
+            cursor: pointer;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        /* See Later */
+
+        .message {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .hidden-message {
+            font-size: 22px;
+            color: #ff4d4d;
+            margin-top: 15px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            /* See Later */
+        }
+
+        .heart:hover + .hidden-message {
+            opacity: 1;
+        }
+        /* See Later */
+    </style>
+</head>
+<body>
+
+    <div class="message">Hey [His Name], I just wanted to say...</div>
+    <div class="heart">❤️</div>
+    <div class="hidden-message">You're amazing, and I like you a lot! ❤️</div>
+
+</body>
+</html>
+
+
+<!-- Explanations:
+1. vh Represents a percentage of the height of the viewport's
+2. animation: heartbeat 1s infinite; → Applies an animation called heartbeat that lasts 1 second and repeats forever.
+3. @keyframes is a CSS rule used to define animations. The heartbeat animation creates a smooth pulsing effect (like a real heartbeat) by changing the size of an element over time.
+4. ease-in-out means it will fade in smoothly over 0.5 seconds instead of appearing suddenly.
+5. The + symbol in CSS is called the Adjacent Sibling Selector. Only selects the first .hidden-message immediately after .heart. When you hover over the heart (❤️), the hidden message appears!
+Stops showing when you move your mouse away.
+If use nothing in between, doesn't show message.
+if use comma, shows message even without hovering.
+-->
