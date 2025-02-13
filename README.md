@@ -25,6 +25,6 @@ This repository contains my **Valentine’s Day-themed projects** made with **HT
   - **Valentine's 6**: 
     A fun Python project using the turtle module to draw a heart and display a sweet Valentine’s Day message.
 
-## 🎨 Technologies Used:
+## 🎨 Languages Used:
   - **HTML/CSS**: Used to create beautiful, interactive Valentine’s Day web pages with animations.
   - **Python**: Used for scripts that type messages, create graphics, and draw hearts using the turtle module.
